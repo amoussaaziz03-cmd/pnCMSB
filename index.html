@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pnCMSB MVP - Démonstration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notice">Démonstration locale - données fictives uniquement. Ne pas utiliser avec des données de santé réelles.</div>
+  <header>
+    <div class="brand"><span class="mark">+</span><div><strong>CMSB</strong><small>Centre Médical Santé et Bien-être</small></div></div>
+    <nav id="mainNav" aria-label="Navigation principale"></nav>
+    <button id="logout" class="quiet" hidden>Changer de profil</button>
+  </header>
+  <main id="app"></main>
+  <template id="homeTemplate">
+    <section class="hero">
+      <p class="eyebrow">pnCMSB - MVP</p><h1>Le dossier patient au cœur du parcours de soins</h1>
+      <p>Prototype de démonstration des fonctions prioritaires : enregistrement, consultation, constantes, prescription et accès patient.</p>
+    </section>
+    <section class="role-grid">
+      <button class="role-card" data-role="admin"><span>01</span><h2>Secrétariat</h2><p>Créer et retrouver un dossier, enregistrer une consultation.</p></button>
+      <button class="role-card" data-role="care"><span>02</span><h2>Équipe soignante</h2><p>Consulter le dossier, saisir les constantes et prescrire.</p></button>
+      <button class="role-card" data-role="patient"><span>03</span><h2>Patient</h2><p>Consulter les informations validées pour son suivi.</p></button>
+    </section>
+    <section class="scope"><h2>Ce que couvre cette démonstration</h2><div><p><b>Inclus</b><br>Dossiers fictifs, recherche, suivi de consultation, constantes, prescription et publication contrôlée.</p><p><b>Hors périmètre</b><br>Vraie authentification, stockage sécurisé, intégrations laboratoire et usage clinique réel.</p></div></section>
+  </template>
+  <script src="app.js"></script>
+</body>
+</html>
